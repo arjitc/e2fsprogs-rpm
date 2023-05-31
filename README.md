@@ -1,8 +1,15 @@
 # e2fsprogs-rpm
-e2fsprogs RPM Builds
+Building e2fsprogs RPM for RHEL based operating systems (AlmaLinux/Rocky Linux 7/8/9)
+
+### WARNING: ALL Tests are disabled/skipped in the spec file, use at your own risk!
 
 
-rpmbuild --bb e2fsprogs.spec
+| OS      | Works? |
+| ----------- | ----------- |
+| AlmaLinux 8 | Yes       |
+| Rocky Linux | Yes        |
+| Rocky Linux 9 | No       |
+| AlmaLinux 9   | No       |
 
 ```
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.47.0/e2fsprogs-1.47.0.tar.xz -O /root/rpmbuild/SOURCES/e2fsprogs-1.47.0.tar.xz
