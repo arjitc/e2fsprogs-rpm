@@ -8,8 +8,8 @@ Building e2fsprogs RPM for RHEL based operating systems (AlmaLinux/Rocky Linux 7
 | ----------- | ----------- |
 | AlmaLinux 8 | Yes       |
 | Rocky Linux | Yes        |
-| Rocky Linux 9 | No       |
-| AlmaLinux 9   | No       |
+| Rocky Linux 9 | Yes       |
+| AlmaLinux 9   | Yes       |
 
 ### Installing RPMTools
 
@@ -52,7 +52,8 @@ wget https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.
 
 ```
 yum install fuse-devel
-yum install libblkid-devel libselinux-devel libsepol-devel libuuid-devel multilib-rpm-config
+yum install libblkid-devel libselinux-devel libsepol-devel libuuid-devel
+yum install fuse-devel gcc make fuse3-devel
 ```
 
 ```
@@ -73,6 +74,23 @@ e2fsck 1.47.0 (5-Feb-2023)
         Using EXT2FS Library version 1.47.0, 5-Feb-2023
 [root@vps ~]#
 ```
+
+
+#### AlmaLinux / Rocky Linux 9
+
+multilib-rpm-config,
+
+```
+rpm -Uvh https://download.rockylinux.org/pub/rocky/9/CRB/x86_64/os/Packages/m/multilib-rpm-config-1-19.el9.noarch.rpm
+```
+
+texinfo & perl-Unicode-EastAsianWidth
+
+```
+rpm -Uvh https://mirror.stream.centos.org/9-stream/CRB/x86_64/os/Packages/texinfo-6.7-15.el9.x86_64.rpm
+rpm -Uvh https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/p/perl-Unicode-EastAsianWidth-12.0-10.fc38.noarch.rpm
+```
+
 
 ### Sources/References
 
