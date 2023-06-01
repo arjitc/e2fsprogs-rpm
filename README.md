@@ -79,3 +79,5 @@ e2fsck 1.47.0 (5-Feb-2023)
 - https://src.fedoraproject.org/rpms/e2fsprogs/raw/main/f/e2fsprogs.spec
 - https://blog.nillsf.com/index.php/2018/12/20/how-to-fix-e2fsck-get-a-newer-version-of-e2fsck/
 - https://www.redhat.com/sysadmin/create-rpm-package
+- https://src.fedoraproject.org/rpms/e2fsprogs/tree/main
+- https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/
