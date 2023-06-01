@@ -81,3 +81,6 @@ e2fsck 1.47.0 (5-Feb-2023)
 - https://www.redhat.com/sysadmin/create-rpm-package
 - https://src.fedoraproject.org/rpms/e2fsprogs/tree/main
 - https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/
+- https://downloads.whamcloud.com/public/e2fsprogs/latest/el8/RPMS/x86_64/
+- https://downloads.whamcloud.com/public/e2fsprogs/latest/el7/RPMS/x86_64/
+- https://downloads.whamcloud.com/public/e2fsprogs/latest/el9/RPMS/x86_64/
