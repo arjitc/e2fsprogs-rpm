@@ -84,3 +84,4 @@ e2fsck 1.47.0 (5-Feb-2023)
 - https://downloads.whamcloud.com/public/e2fsprogs/latest/el8/RPMS/x86_64/
 - https://downloads.whamcloud.com/public/e2fsprogs/latest/el7/RPMS/x86_64/
 - https://downloads.whamcloud.com/public/e2fsprogs/latest/el9/RPMS/x86_64/
+- https://yum.oracle.com/repo/OracleLinux/OL8/codeready/builder/x86_64/index.html
