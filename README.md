@@ -11,6 +11,38 @@ Building e2fsprogs RPM for RHEL based operating systems (AlmaLinux/Rocky Linux 7
 | Rocky Linux 9 | No       |
 | AlmaLinux 9   | No       |
 
+### Installing RPMTools
+
+```
+dnf install -y rpmdevtools rpmlint
+```
+
+Automatically create the folder tree
+
+```
+rpmdev-setuptree
+```
+
+eg
+
+```
+rpmbuild/
+├── BUILD
+├── RPMS
+├── SOURCES
+├── SPECS
+└── SRPMS
+```
+
+Load the .spec file into the SPECS folder, for example:
+
+```
+wget https://raw.githubusercontent.com/arjitc/e2fsprogs-rpm/main/e2fsprogs.spec -O /root/rpmbuild/SPECS/e2fsprogs.spec
+```
+
+
+### Building The RPM
+
 ```
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.47.0/e2fsprogs-1.47.0.tar.xz -O /root/rpmbuild/SOURCES/e2fsprogs-1.47.0.tar.xz
 wget https://src.fedoraproject.org/rpms/e2fsprogs/raw/main/f/0001-remove-local-PATH.patch -O /root/rpmbuild/SOURCES/0001-remove-local-PATH.patch
@@ -41,3 +73,9 @@ e2fsck 1.47.0 (5-Feb-2023)
         Using EXT2FS Library version 1.47.0, 5-Feb-2023
 [root@vps ~]#
 ```
+
+### Sources/References
+
+- https://src.fedoraproject.org/rpms/e2fsprogs/raw/main/f/e2fsprogs.spec
+- https://blog.nillsf.com/index.php/2018/12/20/how-to-fix-e2fsck-get-a-newer-version-of-e2fsck/
+- https://www.redhat.com/sysadmin/create-rpm-package
